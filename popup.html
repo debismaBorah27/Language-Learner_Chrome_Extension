@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Language Learner</title>
+  <style>
+    /* Add some basic styling */
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 20px;
+      margin: 0;
+      background-color: #b6c6fc;
+      backdrop-filter: blur(50px);
+      width: 400px;
+     
+    }
+    .container {
+      background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+      border-radius: 15px;
+      padding: 20px;
+      backdrop-filter: blur(10px); /* Blurry background effect */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for better contrast */
+      width: 600px;
+      margin: auto;
+    }
+    select, input, button {
+        display: block;
+      width: 100%;
+      margin: 10px 0;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      box-sizing: border-box;
+    }
+    button {
+      background: linear-gradient(135deg, #6e8efb, #a777e3); /* Gradient color for the button */
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    
+    button:hover {
+      background: linear-gradient(135deg, #a777e3, #6e8efb);
+    }
+    
+    /* Style for the translation output */
+    #translationOutput {
+      margin-top: 20px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+    <div class="cotainer">
+  <h1>Language Learner</h1>
+  
+  <!-- Input for the word to translate -->
+  <input type="text" id="wordInput" placeholder="Enter word" />
+
+
+  <!-- Dropdown to select target language -->
+  <select id="languageSelect">
+    <option value="es">Spanish</option>
+    <!-- <option value="en">English</option> -->
+    <!-- <option value="as">Assamese</option> -->
+    <option value="de">German</option>
+    <option value="it">Italian</option>
+    <option value="fr">French</option>
+    <!-- Add more target languages here if needed -->
+  </select>
+
+  <!-- Button to trigger translation -->
+  <button id="translateWord">Translate</button>
+
+  <!-- Output area for the translation -->
+  <p id="translationOutput"></p>
+    <!-- Points Display -->
+    <p id="pointsDisplay">Points: </p>
+</div>
+  <script src="popup.js"></script>
+</body>
+</html>
