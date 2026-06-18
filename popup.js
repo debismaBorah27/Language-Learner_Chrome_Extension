@@ -32,12 +32,10 @@ function addPoints(pointsToAdd) {
     if (word) {
       const translation = await translateWord(word, language);
       document.getElementById('translationOutput').textContent = `Translation: ${translation}`;
-    } else {
-      // document.getElementById('translationOutput').textContent = "Please enter a word.";
     }
   });
   // Load the points when the popup is opened
-document.addEventListener('DOMContentLoaded', () => {
+
   getPoints((points) => {
       document.getElementById('pointsDisplay').textContent = `Points: ${points}`;
   });
