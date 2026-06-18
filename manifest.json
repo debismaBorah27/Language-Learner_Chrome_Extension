@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "Language Learner",
+    "version": "1.0",
+    "description": "Translit a word into your chosen language.",
+    "permissions": [
+      "storage"
+    ],
+    "action": {
+      "default_popup": "popup.html",
+ "default_icon": "icon.png",
+ "host_permissions": ["https://api.mymemory.translated.net/"]
+    }
+  }
+  
